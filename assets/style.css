@@ -22,7 +22,34 @@ header {
     background-color: var(--main-color);
     color: var(--header-text);
     padding: 20px 50px;
-    font-family: Verdana ;
+    font-family: Verdana, sans-serif;
+}
+/**currently using table to manipulate the layout, change this when using grid/flexbox**/
+nav {
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+nav table {
+    width: 100%;
+}
+nav table td {
+    text-align: center;
+}
+
+#search {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#search-button {
+    color: var(--header-text);
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
 }
 
 main {
@@ -33,9 +60,7 @@ main p {
     padding: 5px 0;
 }
 
-.reference {
-    vertical-align: super;
-}
+
 figure {
     display: block;
     margin: 0 auto;
@@ -43,4 +68,21 @@ figure {
 }
 figure img {
     width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+#references {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#references ol {
+    margin: 0 20px;
+}
+.reference-link {
+    vertical-align: super;
 }
