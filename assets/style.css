@@ -1,0 +1,38 @@
+:root {
+    --background-color: #e5e5e5;
+    --main-color: #024489;
+    --header-text: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+  overscroll-behavior: none;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 20px;
+}
+
+header {
+    background-color: var(--main-color);
+    color: var(--header-text);
+    padding: 20px 50px;
+    display: flex;
+}
+
+main {
+    margin: 20px 50px;
+}
+
+main p {
+    padding: 5px 0;
+}
+
+.reference {
+    vertical-align: super;
+}
