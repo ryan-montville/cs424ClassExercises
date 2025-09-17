@@ -24,7 +24,8 @@ header {
     padding: 20px 50px;
     font-family: Verdana, sans-serif;
 }
-/**currently using table to manipulate the layout, change this when using grid/flexbox**/
+
+/**currently using table to manipulate the layout, this will be changed when using grid/flexbox**/
 nav {
     padding: 10px 20px;
     border-bottom: 1px solid black;
@@ -56,8 +57,17 @@ main {
     margin: 20px 50px;
 }
 
+main section {
+    margin: 15px 0;
+}
+
 main p {
     padding: 5px 0;
+}
+
+/**Adding a margin so lists line up better with the paragraphs**/
+main li {
+    margin: 0 15px;
 }
 
 
