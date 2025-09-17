@@ -70,6 +70,12 @@ figure img {
     width: 100%;
 }
 
+.posts article {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+
 footer {
     text-align: center;
 }
