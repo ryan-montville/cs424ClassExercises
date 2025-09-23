@@ -42,6 +42,14 @@ nav table td {
     text-align: center;
 }
 
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
 #search {
     border: 1px solid black;
     border-radius: 10px;
