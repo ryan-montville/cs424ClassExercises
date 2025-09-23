@@ -50,7 +50,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#search {
+#search-input {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
