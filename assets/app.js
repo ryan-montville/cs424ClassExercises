@@ -51,11 +51,11 @@ function app() {
     function fakeSearch(input, output) {
         //Store the search box input as an object
         let searchInput = input.value;
+        console.log(`The length of the searchInput is ${searchInput.length}`);
         //Clear the search results section in case there was a previous search
         output.innerHTML = '';
         //Check to make sure te search box is not empty
         if (searchInput.length !== 0) {
-            console.log(searchInput.length);
             //Create the title
             let h2 = document.createElement('h2');
             let titleText = document.createTextNode('Search Results');
@@ -80,7 +80,7 @@ function app() {
     inputBox.addEventListener('keypress', (e) => {
         if (e.keyCode === 13) {
             console.log("enter pressed");
-            fakeSearch(inputBox.value, fakeSearchResults);
+            fakeSearch(inputBox, fakeSearchResults);
         }
     });
 }
