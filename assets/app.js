@@ -63,7 +63,7 @@ function app() {
             output.appendChild(h2);
             //Create the results as a p element
             let p = document.createElement('p');
-            let resulsts = createTextNode(`No results found for "${searchInput}". Sorry about that.`);
+            let resulsts = document.createTextNode(`No results found for "${searchInput}". Sorry about that.`);
             p.appendChild(resulsts);
             //Add the results to the search results section
             output.appendChild(p);
