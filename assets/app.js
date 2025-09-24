@@ -95,7 +95,7 @@ function app() {
 
     //Event listener to clear the search results when the "clear Search Results" button is pressed
     //Also checking to see if the button exists on the page, since it will only exist is the user has search for something
-    let clearButton = document.getElementById('.clear-button');
+    let clearButton = document.getElementsByClassName('clear-button');
     if (clearButton) {
         console.log('Clear button exists on the page.')
         clearButton.addEventListener('click', () => {
