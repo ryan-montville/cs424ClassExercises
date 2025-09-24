@@ -41,11 +41,12 @@ searchButton.addEventListener('click',() => {
     fakeSearch();
 });
 
-inputValue.addEventListener('keypress', (e) => {
-    if (e.keycode === 13) {
-        console.log("enter pressed");
-        fakeSearch();
+inputBox.addEventListener('keypress', (e) => {
+    // check key pressed by code - 13 - return
+    if (e.keyCode === 13) {
+      console.log("enter pressed");
+      fakeSearch();
     }
-})
+  });
 
 
