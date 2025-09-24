@@ -25,14 +25,14 @@ for (let i=0; i < 5; i++) {
     addAPost(i);
 }
 
-let input = document.getElementById('search-input');
-let inputValue = input.value;
+let inputBox = document.getElementById('search-input');
+inputBox.value = '';
 let fakeSearchResults = document.getElementById('fake-search-results');
 
 //function to return a fake search results that just says "No results found"
 function fakeSearch() {
-    fakeSearchResults.innerHTML = `<h2>Search Results</h2><p>No results found for "${inputValue}". (sorry)`;
-    inputValue = '';
+    fakeSearchResults.innerHTML = `<h2>Search Results</h2><p>No results found for "${inputBox.value}". (sorry)`;
+    inputBox.value = '';
 }
 
 //event listener for the search button to return the fake results
