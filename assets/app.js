@@ -68,6 +68,14 @@ function app() {
             p.appendChild(resulsts);
             //Add the results to the search results section
             output.appendChild(p);
+            //Create a button to clear the search results
+            //Used https://www.w3schools.com/howto/howto_js_add_class.asp for help
+            let clear = document.createElement('button');
+            let buttonText = document.createTextNode("Clear Search Results");
+            clear.appendChild(buttonText);
+            clear.classList.add("clear-button");
+            //Add the button to the section
+            output.appendChild(clear);
         }
     }
 
@@ -84,6 +92,16 @@ function app() {
             fakeSearch(inputBox, fakeSearchResults);
         }
     });
+
+    //Event listener to clear the search results when the "clear Search Results" button is pressed
+    //Also checking to see if the button exists on the page, since it will only exist is the user has search for something
+    if(document.getElementById('.clear-button')) {
+        let clearButton = document.getElementById('.clear-button');
+        clearButton.addEventListener('click', () => {
+            fakeSearchResults.innerHTML = '';
+            inputBox.value = '';
+        });
+    }
 }
 
 app();

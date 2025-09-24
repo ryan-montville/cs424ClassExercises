@@ -86,6 +86,10 @@ main li {
     margin: 0 15px;
 }
 
+#classes li {
+    list-style-type: none;
+}
+
 #classes li:nth-child(odd) {
     background-color: var(--li-odd-background);
 }
