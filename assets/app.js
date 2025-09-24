@@ -103,6 +103,8 @@ function app() {
             fakeSearchResults.innerHTML = '';
             inputBox.value = '';
         });
+    } else {
+        console.log("Can't find clear button")
     }
 }
 

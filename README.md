@@ -1,5 +1,4 @@
 # cs424ClassExercises
-CS 424 Class Exercises
 
 I have decieded to make the website for the fictional Greendale Community College from the TV show Community.
 
