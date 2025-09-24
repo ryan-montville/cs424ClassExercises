@@ -25,12 +25,14 @@ for (let i=0; i < 5; i++) {
     addAPost(i);
 }
 
+let input = document.getElementById('search-input');
+let inputValue = input.value;
+let fakeSearchResults = document.getElementById('fake-search-results');
+
 //function to return a fake search results that just says "No results found"
 function fakeSearch() {
-    let input = document.getElementById('search-input');
-    let inputValue = input.value;
-    let fakeSearchResults = document.getElementById('fake-search-results');
     fakeSearchResults.innerHTML = `<h2>Search Results</h2><p>No results found for "${inputValue}". (sorry)`;
+    inputValue = '';
 }
 
 //event listener for the search button to return the fake results
@@ -38,4 +40,11 @@ let searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click',() => {
     fakeSearch();
 });
+
+inputValue.addEventListener('keypress', (e) => {
+    if (e.keycode === 13) {
+        fakeSearch();
+    }
+})
+
 
