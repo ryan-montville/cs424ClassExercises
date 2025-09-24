@@ -1,3 +1,4 @@
+/** I like using variables for the colors to reuse them. Also convientent for dark mode, but I'm not adding that now since you haven't said anything about it yet **/
 :root {
     --background-color: #fff;
     --main-color: #024489;
