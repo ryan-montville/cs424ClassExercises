@@ -95,8 +95,8 @@ function app() {
 
     //Event listener to clear the search results when the "clear Search Results" button is pressed
     //Also checking to see if the button exists on the page, since it will only exist is the user has search for something
-    if(document.getElementById('.clear-button')) {
-        let clearButton = document.getElementById('.clear-button');
+    let clearButton = document.getElementById('.clear-button');
+    if (clearButton) {
         clearButton.addEventListener('click', () => {
             fakeSearchResults.innerHTML = '';
             inputBox.value = '';
