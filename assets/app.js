@@ -54,7 +54,7 @@ function app() {
         //Clear the search results section in case there was a previous search
         output.innerHTML = '';
         //Check to make sure te search box is not empty
-        if (input !== '') {
+        if (searchInput !== '') {
             //Create the title
             let h2 = document.createElement('h2');
             let titleText = document.createTextNode('Search Results');
