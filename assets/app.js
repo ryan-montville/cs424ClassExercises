@@ -49,9 +49,9 @@ function app() {
     //function to return a fake search results that just says "No results found for [inputBox.value]"
     //The search results section only has content after the user searches for something, otherwise its an empty section
     function fakeSearch(input, output) {
+        console.log("Running search results.")
         //Store the search box input as an object
         let searchInput = input.value;
-        console.log(`The length of the searchInput is ${searchInput.length}`);
         //Clear the search results section in case there was a previous search
         output.innerHTML = '';
         //Check to make sure te search box is not empty
@@ -73,13 +73,14 @@ function app() {
 
     //Event listener for the search button to return the fake results
     searchButton.addEventListener('click', () => {
+        console.log("The search button was pressed.")
         fakeSearch(inputBox, fakeSearchResults);
     });
 
     //Event listener to return the fake results when the user presses the 'Enter' key
     inputBox.addEventListener('keypress', (e) => {
         if (e.keyCode === 13) {
-            console.log("enter pressed");
+            console.log("The enter key was pressed.");
             fakeSearch(inputBox, fakeSearchResults);
         }
     });

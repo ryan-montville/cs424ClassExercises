@@ -5,13 +5,17 @@
     --header-text: #fff;
     --nav-background: #3f3f3f;
     --nav-text: #fff;
+    --li-even-background: #bbb;
+    --li-odd-background: #ddd;
 }
 
+/** This is the ony way I know how to get rid of white space around the edge of the page. **/
 * {
     padding: 0;
     margin: 0;
 }
 
+/** Adding this to prevent the "stech" behavior on mobile when you scroll to the start or end of the page **/
 html, body {
   overscroll-behavior: none;
 }
@@ -28,7 +32,7 @@ header {
     font-family: Verdana, sans-serif;
 }
 
-/**currently using table to manipulate the layout, this will be changed when using grid/flexbox**/
+/**currently using table to manipulate the layout, this will be changed when you teach us flexbox/responsive design **/
 nav {
     padding: 10px 20px;
     border-bottom: 1px solid black;
@@ -78,11 +82,17 @@ main p {
     padding: 5px 0;
 }
 
-/**Adding a margin so lists line up better with the paragraphs**/
 main li {
     margin: 0 15px;
 }
 
+#classes li:nth-child(odd) {
+    background-color: var(--li-odd-background);
+}
+
+#classes li:nth-child(even) {
+    background-color: var(--li-even-background);
+}
 
 figure {
     display: block;
