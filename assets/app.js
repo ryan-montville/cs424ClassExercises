@@ -63,7 +63,7 @@ function app() {
     }
 
     //for loop to add all the posts
-    for (let i = 0; i < postTitles.length; i++) {
+    for (let i = 0; i < posts.length; i++) {
         addAPost(i);
     }
 
