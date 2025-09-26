@@ -74,6 +74,11 @@ function app() {
             let buttonText = document.createTextNode("Clear Search Results");
             clear.appendChild(buttonText);
             clear.classList.add("clear-button");
+            //Event listener to clear the search results when the "clear Search Results" button is pressed
+            clear.addEventListener('click', () => {
+                output.innerHTML = '';
+                input.value = '';
+            })
             //Add the button to the section
             output.appendChild(clear);
         }
@@ -92,20 +97,6 @@ function app() {
             fakeSearch(inputBox, fakeSearchResults);
         }
     });
-
-    //Event listener to clear the search results when the "clear Search Results" button is pressed
-    //Also checking to see if the button exists on the page, since it will only exist is the user has search for something
-    let clearButton = document.getElementsByClassName('clear-button');
-    if (clearButton) {
-        console.log('Clear button exists on the page.')
-        clearButton.addEventListener('click', () => {
-            console.log('clear button has been pressed.')
-            fakeSearchResults.innerHTML = '';
-            inputBox.value = '';
-        });
-    } else {
-        console.log("Can't find clear button")
-    }
 }
 
 app();
