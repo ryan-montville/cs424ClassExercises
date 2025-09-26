@@ -62,7 +62,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-#search-button {
+button {
     color: var(--header-text);
     background-color: var(--main-color);
     border-radius: 10px;
