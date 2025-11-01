@@ -1,0 +1,85 @@
+/* Page grid */
+#grid-wrapper {
+    display: grid;
+    grid-template-rows: 100px 50px auto 50px;
+    grid-template-areas: 
+        "header"
+        "message"
+        "main"
+        "footer";
+        height: 100vh;
+}
+
+#message {
+    grid-area: message;
+}
+
+/* Header grid */
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    /* grid-template-rows: 50px; */
+    grid-template-areas: 
+        "logo title"
+        "logo tagline";
+    gap: 5px;
+    grid-area: header;
+    background-color: purple;
+}
+
+header img {
+    grid-area: logo;
+}
+header h1 {
+    grid-area: title;
+}
+header p {
+    grid-area: tagline;
+}
+
+/* main grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    grid-template-rows: 80px auto;
+    grid-template-areas: 
+        "options search"
+        "books-container books-container";
+        grid-area: main;
+}
+
+#options {
+    grid-area: options;
+}
+
+#search {
+    grid-area: search;
+}
+
+#books-container {
+    grid-area: books-container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-item img {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+}

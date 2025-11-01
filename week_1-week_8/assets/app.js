@@ -46,12 +46,12 @@ function app() {
         h2.appendChild(postTitle);
         //Add the post title to the article
         newPost.appendChild(h2);
-        //Create the publish date and author line
-        let h3 = document.createElement('span');
-        let authorDatePublished = document.createTextNode(`${posts[index].author} | ${posts[index].pubDate}`);
-        h3.appendChild(authorDatePublished);
+        //Create the meta line
+        let h3 = document.createElement('h3');
+        let metaLine = document.createTextNode(`${posts[index].author} | ${posts[index].pubDate}`);
+        h3.appendChild(metaLine);
         //Add the publish date and author
-        newPost.appendChild(authorDatePublished);
+        newPost.appendChild(metaLine);
         //Create the post content as a p element
         let p = document.createElement('p');
         let postContent = document.createTextNode(posts[index].content);

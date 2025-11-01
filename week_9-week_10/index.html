@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totslly Real Site</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="grid.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div id="grid-wrapper">
+        <header>
+            <img src="images/Greendalelogo.webp" id="siteLog" />
+            <h1 id="site-title">Ryan's Reading List</h1>
+            <p id="tagline">Tracking books read since 2021</p>
+        </header>
+        <section class="message-wrapper" id="message"></section>
+        <main>
+            
+            <section id="filter-year" class="filter card"><p>Filter by year:</p></section>
+            <form id="search" class="card">
+                <label for="searchInput">Search Book Titles:</label>
+                <input type="text" id="searchInput" name="searchInput" />
+                <button type="submit">Search</button>
+            </form>
+            <section id="books-container"></section>
+
+        </main>
+        <footer>
+            <p>This is the footer.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

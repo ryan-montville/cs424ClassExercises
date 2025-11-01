@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+        --body-background: #e7e9f1;
+        --header-background: purple;
+        --header-text: #fff;
+        --nav-background: #444444;
+        --nav-text: #fff;
+        --message-text: white;
+        --error-background: #b81f24;
+        --success-background: green;
+        --delete-background: #FC6A03;
+        --main-background: #ffffff;
+        --main-text: #000000;
+        --footer-background: #676486;
+        --footer-text: #fff;
+    }
+
+/* Messages */
+.message-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.message button {
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid var(--message-text);
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.success {
+    background-color: var(--success-background);
+    color: var(--message-text);
+}
+
+.error {
+    background-color: var(--error-background);
+    color: var(--message-text);
+}
+
+.warn {
+    background-color: var(--delete-background);
+    color: var(--message-text);
+}
+
+.info {
+    background-color: var(--secondary-accent);
+    color: var(--message-text);
+}
+
+body {
+    background-color: #e5e5e5;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+}
+
+header img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+/* main */
+
+#books-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--main-background);
+    color: var(--main-text);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 10px;
+    padding: 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter button {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.book {
+    width: 500px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.book img {
+    height: 100px;
+}
+/* footer */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

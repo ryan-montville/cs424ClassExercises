@@ -50,9 +50,17 @@ nav table td {
 nav a {
     color: var(--nav-text);
     text-decoration: none;
+    padding: 5px;
 }
 nav a:hover {
     text-decoration: underline;
+}
+
+/*Referenced https://codepen.io/tysongach/pen/wJpZWy for help with current page link styling */
+[aria-current]:not([aria-current="false"]) {
+  background-color: var(--main-color);
+  border: 1px solid var(--nav-text);
+  border-radius: 5px;
 }
 
 #search-input {
@@ -108,7 +116,7 @@ figure img {
     width: 100%;
 }
 
-.posts article {
+#posts article {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid black;
