@@ -114,7 +114,8 @@ header h1 {
 }
 
 .book {
-    width: 500px;
+    flex-basis: 450px;
+    flex-grow: 1;
     max-height: 200px;
     display: flex;
     align-items: center;
