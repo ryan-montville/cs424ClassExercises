@@ -58,6 +58,7 @@ function searchBooks() {
             messageString = `${booksToDisplay.length} books matching "${searchTerm.toString().trim()}"`;
         } else {
             messageString = `No results for "${searchTerm.toString().trim()}"`;
+            createMessage("No books found", "message", "error");
         }
         displayBooks();
     }
@@ -173,7 +174,9 @@ function displayBooks() {
         bookCard.appendChild(infoSection);
         booksContainer.appendChild(bookCard);
     });
-    createMessage(`Loaded ${booksToDisplay.length} books`, 'message', 'check_circle');
+    if (booksToDisplay.length !== 0) {
+        createMessage(`Loaded ${booksToDisplay.length} books`, 'message', 'check_circle');
+    }
 
 }
 
