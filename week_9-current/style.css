@@ -85,11 +85,42 @@ header h1 {
 }
 
 /* main */
+#result-message {
+    text-align: center;
+}
 
 #books-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.book {
+    flex-basis: 450px;
+    flex-grow: 1;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.book img {
+    height: 100px;
+}
+
+.book ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book ul li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--main-text);
+    border-radius: 5px;
 }
 
 .card {
@@ -113,18 +144,7 @@ header h1 {
     cursor: pointer;
 }
 
-.book {
-    flex-basis: 450px;
-    flex-grow: 1;
-    max-height: 200px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 
-.book img {
-    height: 100px;
-}
 /* footer */
 footer {
     background-color: var(--footer-background);

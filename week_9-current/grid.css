@@ -46,8 +46,13 @@ main {
     grid-template-rows: 80px auto;
     grid-template-areas:
         "options search"
+        "result-message result-message"
         "books-container books-container";
     grid-area: main;
+}
+
+#result-message {
+    grid-area: result-message;
 }
 
 #options {
