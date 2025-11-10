@@ -1,0 +1,27 @@
+{
+    "cityName": "Orlando",
+    "attractions": [
+        "Walt Disney World",
+        "Universal Studios",
+        "Fun spot"
+    ],
+    "weather": [
+        {
+            "season": "spring",
+            "typicalCondition": "warm"
+        },
+        {
+            "season": "summer",
+            "typicalCondition": "Hot and Rainy"
+        },
+        {
+            "season": "fall",
+            "typicalCondition": "warm"
+        },
+        {
+            "season": "winter",
+            "typicalCondition": "Still wam with a few cool days"
+        }
+    ],
+    "visited": true
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Log</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #button-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        #output article {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel Log</h1>
+    <section id="button-container">
+        <article id="part3">
+        <!--Button to load data for JSON Part 3 Exercise-->
+    <h2>JSON Part 3 Exercise</h2>
+    <button id="loadP3">Load Data</button>
+    </article>
+    <article id="part4">
+        <!--Buttons to load data for JSON Part 4 -->
+    <h2>JSON Part 4 Exercise</h2>
+    <button id="part4Good">Load file that exists</button>
+    <button id="part4Bad">Load file that doesn't exist</button>
+    </article>
+    </section>
+    
+    <section id="output">
+        <p>There was an error loading the javascript</p>    
+    </section>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
