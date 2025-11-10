@@ -1,7 +1,7 @@
 /* Page grid */
 #grid-wrapper {
     display: grid;
-    grid-template-rows: 100px 50px auto 50px;
+    grid-template-rows: 120px 50px auto 50px;
     grid-template-areas:
         "header"
         "message"
@@ -91,15 +91,29 @@ footer {
     grid-area: footer;
 }
 
-@media (max-width: 700px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 80px auto;
-        grid-template-areas:
-            "options"
-            "search"
-            "books-container";
-        grid-area: main;
+/*Medai query to make the header display nicely on smaller screens*/
+@media (max-width: 610px) {
+    #grid-wrapper {
+        grid-template-rows: 200px 50px auto 50px;
     }
-}
+        header {
+            grid-template-columns: 100vw;
+            grid-template-areas:
+                "logo"
+                "title"
+                "tagline";
+        }
+    }
+
+    @media (max-width: 700px) {
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 80px auto;
+            grid-template-areas:
+                "options"
+                "search"
+                "books-container";
+            grid-area: main;
+        }
+    }

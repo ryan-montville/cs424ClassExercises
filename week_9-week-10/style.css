@@ -73,11 +73,13 @@ body {
 header {
     background-color: var(--header-background);
     color: var(--header-text);
+    padding: 10px;
 }
 
 header img {
     height: 100px;
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -152,4 +154,14 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/*Media query to resize the header h1 for smaller screens and center align the text*/
+@media (max-width: 610px) {
+    header {
+        text-align: center;
+    }
+    header h1 {
+        font-size: 30px;
+    }
 }
