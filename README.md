@@ -13,7 +13,7 @@ I have created a reading list. I already had the json file of all the recent boo
 
 All exercises are in the week_9-week_10 folder.
 
-[View on GitHub Pages](https://ryan-montville.github.io/cs424ClassExercises/week_09-week-10/index.html)
+[View on GitHub Pages](https://ryan-montville.github.io/cs424ClassExercises/week_09-week_10/index.html)
 
 ## Week 11
 All exercises are in the week_11 folder. I tried to use the same methods of loading the json and error handling that we learned in class.
