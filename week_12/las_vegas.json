@@ -1,0 +1,27 @@
+{
+    "cityName": "Las Vegas",
+    "attractions": [
+        "Bellagio fountains",
+        "Luxor",
+        "Paris Las Vegas"
+    ],
+    "weather": [
+        {
+            "season": "spring",
+            "typicalCondition": "Moderate temps"
+        },
+        {
+            "season": "summer",
+            "typicalCondition": "Hot and dry"
+        },
+        {
+            "season": "fall",
+            "typicalCondition": "Moderate temps"
+        },
+        {
+            "season": "winter",
+            "typicalCondition": "Cool"
+        }
+    ],
+    "visited": false
+}
