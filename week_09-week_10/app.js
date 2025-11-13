@@ -110,7 +110,6 @@ function filterForYear(year) {
 }
 
 async function loadData() {
-    console.log("Fetching data from JSON and putting in local storage");
     try {
         //Fetch books data from books.json
         let response = await fetch('books.json');
