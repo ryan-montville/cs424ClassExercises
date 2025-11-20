@@ -278,16 +278,28 @@ function loadData(url, pageNum, layout) {
     data.then(response => response.json())
         .then(jsonData => {
             //Calculate the number of pages
-            const numPokemon = jsonData['count'];
-            const totalPages = Math.ceil(numPokemon / 100);
-            //Create objects for the previous and next buttons that include the url and page number
-            let previousPage = null;
-            if (jsonData['previous']) {
-                previousPage = { "url": jsonData['previous'], "page": pageNum - 1 };
+            //https://pokeapi.co/api/v2/pokemon/?limit=100&offset=0
+            //Get the limit # from the url. Limit and offset sometimes switch?
+            let urlParam1 = url.split("?")[1].split("&")[0].split("=");
+            let urlParam2 = url.split("?")[1].split("&")[1].split("=");
+            let limit = 0;
+            if (urlParam1[0] === "limit") {
+                limit = urlParam1[1];
+            } else {
+                limit = urlParam2[1];
             }
+            const numPokemon = jsonData['count'];
+            const totalPages = Math.ceil(numPokemon / limit);
+            //Create objects for the previous and next buttons that include the url and page number
             let nextPage = null;
             if (jsonData['next']) {
                 nextPage = { "url": jsonData['next'], "page": pageNum + 1 };
+            } else {
+                pageNum = totalPages;
+            }
+            let previousPage = null;
+            if (jsonData['previous']) {
+                previousPage = { "url": jsonData['previous'], "page": pageNum - 1 };
             }
             //Create an object for the current page url and page number
             let currentPage = { "url": url, "page": pageNum };
