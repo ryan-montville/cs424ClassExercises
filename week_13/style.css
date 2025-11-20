@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+header {
+    padding: 10px;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#pagigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#pagigation button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#pagigation button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#layout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#layout button {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#layout button:hover {
+    color: blue;
+}
+
+#layout button.selected {
+    border: 1px solid blue;
+}
+
+#pokemonDetail {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 0 0 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#outputContainer {
+    overflow-y: scroll;
+}
+
+#pokeList.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#pokeList.list {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+#pokeList.list h2 {
+    text-align: center;
+}
+
+article {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+article:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#pokeList.list article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokeList.list article section {
+    justify-content: space-around;
+}
+
+article section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.stats li {
+    list-style-type: none;
+}
+
+.normalType {
+    background-color: #a4a4a4;
+    color: white;
+}
+
+.fireType {
+    background-color: #bf403a;
+    color: white;
+}
+
+.grassType {
+    background-color: #53a93a;
+    color: white;
+}
+
+.fightingType {
+    background-color: #c7703a;
+    color: white;
+}
+
+.waterType {
+    background-color: #559ad3;
+    color: white;
+}
+
+.flyingType {
+    background-color: #4b65af;
+}
+
+.poisonType {
+    background-color: #7d57a0;
+    color: white;
+}
+
+.electricType {
+    background-color: #f3d153;
+}
+
+.groundType {
+    background-color: #947944;
+    color: white;
+}
+
+.psychicType {
+    background-color: #bf5b99;
+    color: white;
+}
+
+.rockType {
+    background-color: #5c7a7a;
+    color: white;
+}
+
+.iceType {
+    background-color: #72acc2;
+    color: white;
+}
+
+.bugType {
+    background-color: #699936;
+    color: white;
+}
+
+.dragonType {
+    background-color: #50a495;
+    color: white;
+}
+
+.ghostType {
+    background-color: #9d70b1;
+    color: white;
+}
+
+.darkType {
+    background-color: #86538c;
+    color: white;
+}
+
+.steelType {
+    background-color: #5b8196;
+    color: white;
+}
+
+.fairyType {
+    background-color: #5b8196;
+    color: white;
+}

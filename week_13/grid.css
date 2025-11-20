@@ -1,0 +1,39 @@
+#pageWrapper {
+    display: grid;
+    grid-template-rows: 50px 70px auto;
+    grid-template-areas: 
+    "header"
+    "controls"
+    "outputContainer";
+    height: 100vh;
+}
+
+#pokemonDetail.hide {
+    display: none;
+}
+
+#pageWrapper.showDetail {
+    grid-template-rows: 50px 70px auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "controls controls"
+    "pokemonDetail outputContainer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+#controls {
+    grid-area: controls;
+}
+
+#pokemonDetail {
+    grid-area: pokemonDetail;
+}
+
+#outputContainer {
+    grid-area: outputContainer;
+}
