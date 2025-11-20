@@ -66,8 +66,50 @@ header {
     background-color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin: 0 0 10px 10px;
-    padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+#pokemonDetail .pokeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pokemonDetail .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemonDetail .imageContainer img {
+    height: 200px;
+}
+
+#pokemonDetail .detailTypes {
+    display: flex;
+}
+
+#pokemonDetail .detailTypes p {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#pokemonDetail .detailsSection {
+    padding: 20px;
+}
+
+#pokemonDetail fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#pokemonDetail fieldset legend {
+    padding: 5px;
+    font-weight: bold;
 }
 
 #outputContainer {
@@ -148,6 +190,7 @@ article section {
 
 .flyingType {
     background-color: #4b65af;
+    color: white;
 }
 
 .poisonType {
